@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterFly - PRIMEIRA ESCOLA TÉCNICA AERONÁUTICA 100% EAD DO BRASIL</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Floating particles -->
+    <div class="particles">
+        <div class="particle">✈️</div>
+        <div class="particle">🔧</div>
+        <div class="particle">⚙️</div>
+        <div class="particle">🛠️</div>
+        <div class="particle">✈️</div>
+        <div class="particle">🔩</div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo animated-logo">
+                    <div class="logo-image">
+                        <img src="Logo.jpg" alt="MasterFly Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-icon-fallback" style="display: none;">✈️</div>
+                    </div>
+                    <div class="logo-text">
+                        <h2>MasterFly</h2>
+                        <span>Escola Técnica EAD</span>
+                    </div>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#cursos" class="nav-link">Cursos ▼</a>
+                        <ul class="dropdown-menu" id="dropdownMenu">
+                            <li><a href="#" class="dropdown-link disabled">Selecione um curso</a></li>
+                            <li><a href="#" class="dropdown-link" data-course="informacoes">Informações Gerais</a></li>
+                            <li><a href="#" class="dropdown-link" data-course="modulo-basico">Módulo Básico (Formação Obrigatória)</a></li>
+                            <li><a href="#" class="dropdown-link" data-course="gmp">GMP - Grupo Motopropulsor</a></li>
+                            <li><a href="#" class="dropdown-link" data-course="celula">Célula - Estrutura da Aeronave</a></li>
+                            <li><a href="#" class="dropdown-link" data-course="avionicos">Aviônicos - Sistemas Eletrônicos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#realidade-virtual" class="nav-link">Realidade Virtual</a></li>
+                    <li><a href="#eficiencia" class="nav-link">Eficiência VR</a></li>
+                    <li><a href="#reconhecimento-global" class="nav-link">Reconhecimento Global</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="animated-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="typingTitle">MasterFly</h1>
+                <p class="hero-subtitle">PRIMEIRA ESCOLA TÉCNICA AERONÁUTICA 100% EAD DO BRASIL</p>
+                <p class="hero-pioneer">Pioneira no uso de tecnologia de ponta com Realidade Virtual básica e acessível</p>
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">📱</span>
+                        <span>VR Acessível</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🎓</span>
+                        <span>Certificação ANAC</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🚀</span>
+                        <span>Pioneira no Brasil</span>
+                    </div>
+                </div>
+                <a href="#cursos" class="btn btn--primary btn--lg pulse-btn">
+                    <span>Conheça Nossos Cursos</span>
+                    <div class="btn-shine"></div>
+                </a>
+                <div class="hero-stats">
+                    <div class="stat-badge">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-label">% EAD</span>
+                    </div>
+                    <div class="stat-badge">
+                        <span class="stat-number" data-count="1">0</span>
+                        <span class="stat-label">ª no Brasil</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-main-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755031623/pplx_project_search_images/61fcd900306930686893103b8ed44227c42f8e2a.png" alt="Crianças uniformizadas usando VR cardboard básico na escola" loading="eager">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-icon">📱</div>
+                    <div class="floating-icon">⚙️</div>
+                    <div class="floating-icon">🛠️</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about parallax-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="glitch-text">Pioneirismo da MasterFly</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-card slide-in-left">
+                        <p><strong>A MasterFly é a PRIMEIRA ESCOLA TÉCNICA AERONÁUTICA 100% EAD DO BRASIL</strong>, revolucionando a formação de mecânicos de manutenção de aeronaves através da modalidade de Ensino a Distância.</p>
+                    </div>
+                    <div class="text-card slide-in-left delay-200">
+                        <p>Somos também a <strong>PRIMEIRA ESCOLA a usar tecnologia VR básica e acessível</strong> na educação aeronáutica, estabelecendo um novo padrão de inovação com equipamentos simples e eficazes.</p>
+                    </div>
+                    <div class="text-card slide-in-left delay-400">
+                        <p>Nossa abordagem pioneira com VR cardboard e headsets básicos garante uma experiência de aprendizado única e envolvente, mantendo a proximidade com nossos alunos através de aulas práticas virtuais acessíveis.</p>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <div class="image-stack">
+                        <div class="stacked-image primary">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1759094253/pplx_project_search_images/016f9b7d1e99fcdbbcb8a973a10e26d3ccc38566.png" alt="Crianças na escola usando VR para educação" loading="lazy">
+                        </div>
+                        <div class="stacked-image secondary">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1759094253/pplx_project_search_images/8e030f20bd47401d537284170d2d664e661818cf.png" alt="DIY VR cardboard em uso para aprendizado" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Section -->
+    <section id="cursos" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Cursos</h2>
+                <p>Formação completa e certificada pela ANAC</p>
+                <div class="section-line"></div>
+            </div>
+            
+            <!-- Course List View -->
+            <div class="courses-view" id="coursesView">
+                <div class="courses-grid">
+                    <div class="course-card clickable-card" data-course="modulo-basico" data-delay="0">
+                        <div class="course-icon-clickable">
+                            <div class="icon-animation">✈️</div>
+                        </div>
+                        <h3>Módulo Básico</h3>
+                        <span class="course-duration">6 meses • 400h</span>
+                        <div class="course-price">Consulte valores</div>
+                        <button class="btn btn--primary btn--sm course-details-btn">
+                            <span>Ver Detalhes</span>
+                            <div class="btn-arrow">→</div>
+                        </button>
+                    </div>
+
+                    <div class="course-card clickable-card" data-course="gmp" data-delay="100">
+                        <div class="course-icon-clickable">
+                            <div class="icon-animation">🚁</div>
+                        </div>
+                        <h3>GMP - Grupo Motopropulsor</h3>
+                        <span class="course-duration">7-8 meses • 600h</span>
+                        <div class="course-price">Consulte valores</div>
+                        <button class="btn btn--primary btn--sm course-details-btn">
+                            <span>Ver Detalhes</span>
+                            <div class="btn-arrow">→</div>
+                        </button>
+                    </div>
+
+                    <div class="course-card clickable-card" data-course="celula" data-delay="200">
+                        <div class="course-icon-clickable">
+                            <div class="icon-animation">🛩️</div>
+                        </div>
+                        <h3>Célula - Estrutura da Aeronave</h3>
+                        <span class="course-duration">7 meses • 600h</span>
+                        <div class="course-price">Consulte valores</div>
+                        <button class="btn btn--primary btn--sm course-details-btn">
+                            <span>Ver Detalhes</span>
+                            <div class="btn-arrow">→</div>
+                        </button>
+                    </div>
+
+                    <div class="course-card clickable-card" data-course="avionicos" data-delay="300">
+                        <div class="course-icon-clickable">
+                            <div class="icon-animation">📡</div>
+                        </div>
+                        <h3>Aviônicos - Sistemas Eletrônicos</h3>
+                        <span class="course-duration">7 meses • 600h</span>
+                        <div class="course-price">Consulte valores</div>
+                        <button class="btn btn--primary btn--sm course-details-btn">
+                            <span>Ver Detalhes</span>
+                            <div class="btn-arrow">→</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Detail Views -->
+            <div class="course-detail-view hidden" id="courseDetail">
+                <button class="btn btn--secondary back-btn" id="backToCourses">
+                    <span>← Voltar aos Cursos</span>
+                </button>
+                
+                <div class="course-detail-content" id="courseDetailContent">
+                    <!-- Course details will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Realidade Virtual Section -->
+    <section id="realidade-virtual" class="vr-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Realidade Virtual Básica - Aproximando Você do Ambiente Profissional</h2>
+                <p>Tecnologia VR Simples e Acessível para Aproximar do Dia a Dia</p>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="vr-intro">
+                <div class="vr-text">
+                    <h3>VR Básico para Aproximar do Dia a Dia Profissional</h3>
+                    <p>Nossa abordagem inovadora de realidade virtual básica tem um objetivo claro: <strong>aproximar o aluno do dia a dia profissional</strong> usando tecnologia simples e acessível.</p>
+                    <p>Através de <strong>óculos VR cardboard, VR box básicos e headsets educacionais simples</strong>, nossos alunos vivenciam ambientes reais, estando mais próximos dos instrutores e do local de trabalho.</p>
+                    <p>Esta proximidade virtual com VR acessível revoluciona o aprendizado, proporcionando experiências práticas autênticas em um ambiente seguro e controlado.</p>
+                </div>
+                <div class="vr-badge-showcase">
+                    <span class="vr-badge">Pioneira VR Básico</span>
+                    <div class="vr-showcase-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1759094253/pplx_project_search_images/0a59fbcb0302bfa18f186eaf9af3a72fd0c3448c.png" alt="VR Box com controle para treinamento básico" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="vr-benefits">
+                <div class="benefit-card">
+                    <div class="benefit-icon">👨‍🏫</div>
+                    <h4>Proximidade com Instrutores</h4>
+                    <p>Interação direta com professores experientes no ambiente virtual básico</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏭</div>
+                    <h4>Vivência do Local de Trabalho</h4>
+                    <p>Experiência imersiva em hangares e oficinas usando VR simples</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📚</div>
+                    <h4>Aulas em VR Cardboard</h4>
+                    <p>Conteúdo teórico apresentado em ambiente virtual acessível</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h4>Demonstrações Básicas</h4>
+                    <p>Visualização detalhada usando VR educacional simples</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔄</div>
+                    <h4>Aproximação do Dia a Dia</h4>
+                    <p>Simulação de situações reais com equipamentos VR básicos</p>
+                </div>
+            </div>
+
+            <div class="vr-showcase">
+                <div class="showcase-item">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1759085775/pplx_project_search_images/dbcb584873f472b04d0ff30c50b9489b822a3359.png" alt="VRG X1 PRO headset para treinamento" loading="lazy">
+                    <div class="showcase-overlay">
+                        <h4>VRG X1 PRO</h4>
+                        <p>Headset VR profissional para aproximar alunos do ambiente de trabalho</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1759094253/pplx_project_search_images/fc4ce620500c4fc92cc2b597d6df782ac49af7c1.png" alt="VR Box #1 headset com gaming button" loading="lazy">
+                    <div class="showcase-overlay">
+                        <h4>VR Box #1</h4>
+                        <p>Tecnologia VR box #1 com botão gaming para vivenciar o dia a dia aeronáutico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eficiência Comprovada VR -->
+    <section id="eficiencia" class="efficiency-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Eficiência Comprovada do Treinamento em VR Básico</h2>
+                <p>Dados Científicos Sobre a Eficácia do Aprendizado em VR Simples</p>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="efficiency-stats-grid">
+                <div class="efficiency-stat-card" data-delay="0">
+                    <div class="stat-visual">
+                        <div class="stat-circle">
+                            <span class="stat-multiplier">4x</span>
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Mais Rapidez no Aprendizado</h3>
+                        <p>Estudos mostram que alunos treinados com VR básico aprendem 4x mais rápido que métodos tradicionais</p>
+                    </div>
+                </div>
+
+                <div class="efficiency-stat-card" data-delay="100">
+                    <div class="stat-visual">
+                        <div class="stat-circle">
+                            <span class="stat-multiplier">275%</span>
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Mais Confiança</h3>
+                        <p>275% mais confiança para aplicar habilidades aprendidas usando VR cardboard e headsets simples</p>
+                    </div>
+                </div>
+
+                <div class="efficiency-stat-card" data-delay="200">
+                    <div class="stat-visual">
+                        <div class="stat-circle">
+                            <span class="stat-multiplier">3,75x</span>
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Maior Conexão Emocional</h3>
+                        <p>3,75x maior conexão emocional com o conteúdo usando VR básico educacional</p>
+                    </div>
+                </div>
+
+                <div class="efficiency-stat-card" data-delay="300">
+                    <div class="stat-visual">
+                        <div class="stat-circle">
+                            <span class="stat-multiplier">90%</span>
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Aproveitamento VR</h3>
+                        <p>90% de aproveitamento em VR simples vs 68% em métodos tradicionais</p>
+                    </div>
+                </div>
+
+                <div class="efficiency-stat-card" data-delay="400">
+                    <div class="stat-visual">
+                        <div class="stat-circle">
+                            <span class="stat-multiplier">6x</span>
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Mais Atenção</h3>
+                        <p>6x mais atenção e engajamento dos alunos durante as aulas com VR básico</p>
+                    </div>
+                </div>
+
+                <div class="efficiency-stat-card" data-delay="500">
+                    <div class="stat-visual">
+                        <div class="stat-circle">
+                            <span class="stat-multiplier">50%</span>
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Redução de Tempo</h3>
+                        <p>Redução de 50% no tempo necessário para completar o treinamento usando VR acessível</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="efficiency-highlight">
+                <div class="efficiency-highlight-card">
+                    <h3>64% de Melhoria Geral no Aprendizado</h3>
+                    <p>Pesquisas comprovam que o treinamento em realidade virtual básica proporciona <strong>64% de melhoria no aprendizado geral</strong> comparado aos métodos convencionais, revolucionando a educação técnica aeronáutica com tecnologia acessível.</p>
+                    <div class="comparison-bars">
+                        <div class="comparison-item">
+                            <span class="comparison-label">Métodos Tradicionais</span>
+                            <div class="comparison-bar">
+                                <div class="comparison-fill" style="width: 68%"></div>
+                                <span class="comparison-value">68%</span>
+                            </div>
+                        </div>
+                        <div class="comparison-item">
+                            <span class="comparison-label">Treinamento VR Básico</span>
+                            <div class="comparison-bar">
+                                <div class="comparison-fill vr-bar" style="width: 90%"></div>
+                                <span class="comparison-value">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vr-demo-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755240549/pplx_project_search_images/fd8608fe50955e72c4e6483560043eac428ea471.png" alt="Google Cardboard VR básico educacional" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reconhecimento Global Section -->
+    <section id="reconhecimento-global" class="global-recognition">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reconhecimento Global da Profissão</h2>
+                <p>Estatísticas Mundiais sobre Técnicos em Manutenção Aeronáutica</p>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="global-stats-grid">
+                <div class="global-stat-card" data-delay="0">
+                    <div class="stat-icon">🌍</div>
+                    <div class="stat-value">710.000</div>
+                    <div class="stat-label">Novos técnicos necessários até 2044</div>
+                    <div class="stat-source">Boeing Global</div>
+                </div>
+
+                <div class="global-stat-card" data-delay="100">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-value">5%</div>
+                    <div class="stat-label">Crescimento anual no mercado</div>
+                    <div class="stat-source">Setor de Treinamento</div>
+                </div>
+
+                <div class="global-stat-card" data-delay="200">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-value">US$ 6,7 bi</div>
+                    <div class="stat-label">Movimentados no setor até 2032</div>
+                    <div class="stat-source">Mercado Global</div>
+                </div>
+
+                <div class="global-stat-card" data-delay="300">
+                    <div class="stat-icon">🇧🇷</div>
+                    <div class="stat-value">R$ 4.400</div>
+                    <div class="stat-label">Salário médio no Brasil</div>
+                    <div class="stat-source">Mercado Nacional</div>
+                </div>
+
+                <div class="global-stat-card" data-delay="400">
+                    <div class="stat-icon">🇺🇸</div>
+                    <div class="stat-value">US$ 72-100k</div>
+                    <div class="stat-label">Salário anual nos EUA</div>
+                    <div class="stat-source">Mercado Internacional</div>
+                </div>
+            </div>
+
+            <div class="global-projections">
+                <div class="projection-header">
+                    <h3>Projeção Mundial de Demanda por Região</h3>
+                    <p>Distribuição de novos técnicos necessários até 2044</p>
+                </div>
+                
+                <div class="projection-content">
+                    <div class="chart-container" style="position: relative; height: 400px;">
+                        <canvas id="globalChart"></canvas>
+                    </div>
+                    
+                    <div class="regional-breakdown">
+                        <div class="region-item" data-delay="0">
+                            <div class="region-flag">🌏</div>
+                            <div class="region-info">
+                                <h4>Ásia</h4>
+                                <div class="region-value">267.000 técnicos</div>
+                            </div>
+                        </div>
+                        <div class="region-item" data-delay="100">
+                            <div class="region-flag">🇺🇸</div>
+                            <div class="region-info">
+                                <h4>América do Norte</h4>
+                                <div class="region-value">125.000 técnicos</div>
+                            </div>
+                        </div>
+                        <div class="region-item" data-delay="200">
+                            <div class="region-flag">🇪🇺</div>
+                            <div class="region-info">
+                                <h4>Europa</h4>
+                                <div class="region-value">99.000 técnicos</div>
+                            </div>
+                        </div>
+                        <div class="region-item" data-delay="300">
+                            <div class="region-flag">🏜️</div>
+                            <div class="region-info">
+                                <h4>Oriente Médio</h4>
+                                <div class="region-value">59.000 técnicos</div>
+                            </div>
+                        </div>
+                        <div class="region-item" data-delay="400">
+                            <div class="region-flag">🌎</div>
+                            <div class="region-info">
+                                <h4>América Latina</h4>
+                                <div class="region-value">45.000 técnicos</div>
+                            </div>
+                        </div>
+                        <div class="region-item" data-delay="500">
+                            <div class="region-flag">🌍</div>
+                            <div class="region-info">
+                                <h4>África</h4>
+                                <div class="region-value">25.000 técnicos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="industry-quotes">
+                <h3>Reconhecimento da Indústria</h3>
+                <div class="quotes-grid">
+                    <div class="quote-card" data-delay="0">
+                        <div class="quote-content">
+                            <div class="quote-icon">📖</div>
+                            <p>"710,000 maintenance technicians will be needed to maintain the global commercial fleet over the next 20 years."</p>
+                        </div>
+                        <div class="quote-source">Boeing 2025</div>
+                    </div>
+                    
+                    <div class="quote-card" data-delay="200">
+                        <div class="quote-content">
+                            <div class="quote-icon">🦸‍♂️</div>
+                            <p>"Behind every safe flight, there is an aviation technician working diligently. These are the unsung heroes of the aviation industry."</p>
+                        </div>
+                        <div class="quote-source">PIA Technical School</div>
+                    </div>
+                    
+                    <div class="quote-card" data-delay="400">
+                        <div class="quote-content">
+                            <div class="quote-icon">✅</div>
+                            <p>"A&P mechanics must sign aircraft off and take responsibility for the safety of pilots and passengers."</p>
+                        </div>
+                        <div class="quote-source">Thrust Institute</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="global-cta">
+                <h3>Faça Parte desta Profissão Reconhecida Mundialmente</h3>
+                <p>Junte-se aos milhares de técnicos que garantem a segurança da aviação global</p>
+                <div class="cta-buttons">
+                    <a href="#cursos" class="btn btn--primary btn--lg pulse-btn">
+                        <span>Conheça Nossos Cursos</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                    <a href="#contato" class="btn btn--secondary btn--lg">
+                        <span>Entre em Contato</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Section -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeria de Treinamento VR Básico</h2>
+                <p>Conheça nossa tecnologia de Realidade Virtual simples e acessível</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="cardboard-vr">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1754996249/pplx_project_search_images/3ee4456ecc2c4d51fb66db1557dac2e0723f5424.png" alt="Google Cardboard VR básico brown" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Google Cardboard Brown</h4>
+                        <p>VR básico e acessível para aprendizado imersivo</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classroom-vr">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1759094253/pplx_project_search_images/016f9b7d1e99fcdbbcb8a973a10e26d3ccc38566.png" alt="Crianças na escola com VR" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Sala de Aula VR</h4>
+                        <p>Crianças na escola usando VR para educação aeronáutica</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="basic-headset">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1759085775/pplx_project_search_images/dbcb584873f472b04d0ff30c50b9489b822a3359.png" alt="VRG X1 PRO headset" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>VRG X1 PRO</h4>
+                        <p>Equipamento VR profissional e eficaz para treinamento</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="simple-vr">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1759094253/pplx_project_search_images/8e030f20bd47401d537284170d2d664e661818cf.png" alt="DIY VR cardboard em uso" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>DIY VR Cardboard</h4>
+                        <p>DIY VR cardboard em uso para todos os alunos</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="vr-box">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1759094253/pplx_project_search_images/fc4ce620500c4fc92cc2b597d6df782ac49af7c1.png" alt="VR Box #1 headset" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>VR Box #1 Headset</h4>
+                        <p>VR Box #1 com botão gaming integrado</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cardboard-kit">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1759094253/pplx_project_search_images/ce21339b449bc6e2e5c275acdebfc22b4f04c06b.png" alt="Kit Google Cardboard completo" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Kit Google Cardboard</h4>
+                        <p>Kit completo Google Cardboard com instruções</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classroom-group">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755031623/pplx_project_search_images/61fcd900306930686893103b8ed44227c42f8e2a.png" alt="Crianças uniformizadas com VR" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Treinamento em Grupo</h4>
+                        <p>Crianças uniformizadas em treinamento colaborativo com VR</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="first-gen">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1759094254/pplx_project_search_images/63953cf0e4aa7b8797e0fa238144598440aa00ff.png" alt="Google Cardboard first generation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Google Cardboard First Gen</h4>
+                        <p>Primeira geração do Google Cardboard para VR básico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Entre em contato para mais informações sobre nossos cursos</p>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info animated-contact">
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Telefone</h3>
+                        <p><strong>(31) 97317-1465</strong></p>
+                        <span>Atendimento via WhatsApp</span>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>E-mail</h3>
+                        <p><strong>contato@masterfly.com.br</strong></p>
+                        <span>Resposta em até 24h</span>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🎓</div>
+                        <h3>Certificação</h3>
+                        <p><strong>Homologada ANAC</strong></p>
+                        <span>Formação regulamentada</span>
+                    </div>
+                </div>
+                
+                <form class="contact-form animated-form" id="contactForm">
+                    <div class="form-group floating-label">
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <label for="name" class="form-label">Nome Completo</label>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <label for="email" class="form-label">E-mail</label>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                        <label for="phone" class="form-label">Telefone</label>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <select id="course" name="course" class="form-control">
+                            <option value="" disabled selected>Selecione um curso</option>
+                            <option value="informacoes-gerais">Informações Gerais</option>
+                            <option value="modulo-basico">Módulo Básico (Formação Obrigatória)</option>
+                            <option value="gmp">GMP - Grupo Motopropulsor</option>
+                            <option value="celula">Célula - Estrutura da Aeronave</option>
+                            <option value="avionicos">Aviônicos - Sistemas Eletrônicos</option>
+                        </select>
+                        <label for="course" class="form-label">Curso de Interesse</label>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <textarea id="message" name="message" rows="4" class="form-control" placeholder="Conte-nos um pouco sobre você e seus objetivos..."></textarea>
+                        <label for="message" class="form-label">Mensagem</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full-width pulse-btn">
+                        <span>Enviar Mensagem</span>
+                        <div class="btn-shine"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>MasterFly</h3>
+                    <p>PRIMEIRA ESCOLA TÉCNICA AERONÁUTICA 100% EAD DO BRASIL</p>
+                    <div class="footer-contact">
+                        <p>📞 (31) 97317-1465</p>
+                        <p>📧 contato@masterfly.com.br</p>
+                    </div>
+                    <div class="footer-plane">✈️</div>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#realidade-virtual">Realidade Virtual</a></li>
+                        <li><a href="#eficiencia">Eficiência VR</a></li>
+                        <li><a href="#reconhecimento-global">Reconhecimento Global</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                    </ul>
+                </div>
+                <div class="footer-courses">
+                    <h4>Nossos Cursos</h4>
+                    <ul>
+                        <li>Módulo Básico (Formação Obrigatória)</li>
+                        <li>GMP - Grupo Motopropulsor</li>
+                        <li>Célula - Estrutura da Aeronave</li>
+                        <li>Aviônicos - Sistemas Eletrônicos</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MasterFly. Todos os direitos reservados.</p>
+                <div class="footer-animation">
+                    <div class="floating-icon">⚙️</div>
+                    <div class="floating-icon">🔧</div>
+                    <div class="floating-icon">✈️</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
